@@ -3,7 +3,7 @@
 /constructionbevy_env
 /project.txt
 
-# DJANGO 
+
 # Django #
 *.log
 *.pot
