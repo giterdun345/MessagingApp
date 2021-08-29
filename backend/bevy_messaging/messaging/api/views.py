@@ -53,3 +53,10 @@ class ReadMessageAPIView(RetrieveUpdateDestroyAPIView):
     # permission_classes
     lookup_url_kwarg = 'pk'
     queryset = Message.objects.all()
+
+
+class UsersListAPIView(ListAPIView):
+    """API View that lists all users available to message"""
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+#     # permission_classes = [IsAccountAdminOrReadOnly]
